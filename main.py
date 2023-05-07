@@ -10,9 +10,9 @@ def speak(text):
     engine.say(text)
     engine.runAndWait()
 
-# speak('WELCOME TO TRUTH AND DARE')
-# print('THE RULES OF THIS GAME ARE SIMPLE. SAY THE TRUTH AND DO THE DARE AND YOU MAY LEAVE, ELSE, YOU, DIEEE😈😈')
-# speak('THE RULES OF THIS GAME ARE SIMPLE. , , SAY THE TRUTH AND DO THE DARE AND YOU MAY LEAVE, ELSE, YOU, DIE')
+speak('WELCOME TO TRUTH AND DARE')
+print('THE RULES OF THIS GAME ARE SIMPLE. SAY THE TRUTH AND DO THE DARE AND YOU MAY LEAVE, ELSE, YOU, DIEEE😈😈')
+speak('THE RULES OF THIS GAME ARE SIMPLE. , , SAY THE TRUTH AND DO THE DARE AND YOU MAY LEAVE, ELSE, YOU, DIE')
 
 licence = """Notice :
     vThe terms and condition states that
@@ -26,8 +26,8 @@ from response import responses
 def start_game():
     
     print('welcome to the game of doom🤡🤡')
-    # speak('welcome to the game of doom')
-    # speak('how many players are playing')
+    speak('welcome to the game of doom')
+    speak('how many players are playing')
     while True:
         users = []
         num_of_users = (int(input("How many users do you want to create? ")))
