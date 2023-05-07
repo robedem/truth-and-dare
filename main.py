@@ -14,7 +14,8 @@ def speak(text):
 # print('THE RULES OF THIS GAME ARE SIMPLE. SAY THE TRUTH AND DO THE DARE AND YOU MAY LEAVE, ELSE, YOU, DIEEE😈😈')
 # speak('THE RULES OF THIS GAME ARE SIMPLE. , , SAY THE TRUTH AND DO THE DARE AND YOU MAY LEAVE, ELSE, YOU, DIE')
 
-licence = """ The terms and condition states that:
+licence = """Notice :
+    vThe terms and condition states that
             This app may contain some Horrific content and may cause some cases of truama on the brain
   By accepting the terms and condition you hereby accept that you are a legal citizens and that you are 18yrs and above of age
      """
@@ -58,12 +59,12 @@ def start_game():
 print("please read the terms and condition before accisesing this app")
 terms =("""  TYPE Y FOR YES IF YOU HAVE ACCEPTED THE TERMS AND CONDITION
         TYPE N/NO OR Q/QUIT IF YOU DONT AGREE 
-        TYPE VIEW TO VIEW THE TERMS AND CONDITION """)
+        TYPE V TO VIEW THE TERMS AND CONDITION """)
 print(terms)
 
 while True:
     lic=(input(""))
-    if lic == 'view':
+    if lic == 'v':
         print(licence)
     elif lic == 'n':
         quit()
