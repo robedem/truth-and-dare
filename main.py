@@ -24,17 +24,30 @@ licence = """Notice :
 from response import responses
 
 def start_game():
+    
     print('welcome to the game of doom🤡🤡')
     # speak('welcome to the game of doom')
     # speak('how many players are playing')
-    users = []
-    num_of_users = (int(input("How many users do you want to create? ")))
-    for i in range(num_of_users):
-  
-        name = input("Enter the name of user " + str(i+1) + ": ")
-        users.append(name)
-    speak(f"{num_of_users} users has been created succesfully")     
-    print(f" {num_of_users} users has been created succefully")
+    while True:
+        users = []
+        num_of_users = (int(input("How many users do you want to create? ")))
+
+         # Check if user input is valid
+        try:
+            user_number = int(num_of_users)
+            if user_number <=1 or user_number > 5:
+                raise ValueError
+        except ValueError:
+            print("Invalid input. Please enter a number from 2 to 5 or 'q' to quit.")
+            continue
+
+        for i in range(num_of_users):
+    
+            name = input("Enter the name of user " + str(i+1) + ": ")
+            users.append(name)
+        speak(f"{num_of_users} users has been created succesfully")     
+        print(f" {num_of_users} users has been created succefully")
+        break
     while True:
         for i, user in enumerate(users):
             print(f"User {i+1}:", user)
