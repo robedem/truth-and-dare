@@ -10,9 +10,9 @@ def speak(text):
     engine.say(text)
     engine.runAndWait()
 
-speak('WELCOME TO TRUTH AND DARE')
-print('THE RULES OF THIS GAME ARE SIMPLE. SAY THE TRUTH AND DO THE DARE AND YOU MAY LEAVE, ELSE, YOU, DIEEE😈😈')
-speak('THE RULES OF THIS GAME ARE SIMPLE. , , SAY THE TRUTH AND DO THE DARE AND YOU MAY LEAVE, ELSE, YOU, DIE')
+# speak('WELCOME TO TRUTH AND DARE')
+# print('THE RULES OF THIS GAME ARE SIMPLE. SAY THE TRUTH AND DO THE DARE AND YOU MAY LEAVE, ELSE, YOU, DIEEE😈😈')
+# speak('THE RULES OF THIS GAME ARE SIMPLE. , , SAY THE TRUTH AND DO THE DARE AND YOU MAY LEAVE, ELSE, YOU, DIE')
 
 licence = """ The terms and condition states that:
             This app may contain some Horrific content and may cause some cases of truama on the brain
@@ -20,62 +20,12 @@ licence = """ The terms and condition states that:
      """
 
 
-responses = {
-    'truth': [
-        'What is your biggest fear?',
-        'What is the most embarrassing thing that has ever happened to you?',
-        'What is the one thing you would never do, no matter how much money you were offered?',
-        'What is the craziest thing you have ever done?',
-        'What is the most annoying habit you have?',
-        "What's your favorite color?",
-        "What's the craziest thing you've ever done?",
-        "Do you have any hidden talents?",
-        "What's your biggest fear?",
-        "What's the last lie you told?",
-        "What's your favorite food?",
-        "What's your biggest pet peeve?",
-        "Have you ever cheated on a test?",
-        "What's your favorite hobby?",
-        "What's the worst job you've ever had?",
-        "What's the most embarrassing thing that's ever happened to you?",
-        "What's your biggest regret?",
-        "Have you ever stolen anything?",
-        "What's your biggest accomplishment?",
-        "What's the worst gift you've ever received?",
-        "Have you ever been in love?",
-        "What's your favorite movie?",
-        "What's your dream vacation?",
-        "What's the most important thing in your life?",
-        "What's your biggest goal in life?",
-        "have you ever cheated a test in school before",
-        "what is your worst gift you have ever recieved",
-        "have you ever been in love and with who",
-        
-    ],
-    'dare': [
-        'Sing a song in front of everyone!',
-        'Do a handstand for 10 seconds!',
-        'Text your crush and tell them how you really feel!',
-        'Do your best impression of a someone you know',
-        'Do the worm dance move!',
-        "Do 10 jumping jacks.",
-        "Tell a joke.",
-        "Do the worm dance.",
-        "Do a handstand.",
-        "Tell us your best pickup line.",
-        "Recite the alphabet backwards.",
-        "Do a cartwheel.",
-        "Tell us your most embarrassing moment.",
-        "shout as loud as you can",
-        
-    ]
-}
-
+from response import responses
 
 def start_game():
     print('welcome to the game of doom🤡🤡')
-    speak('welcome to the game of doom')
-    speak('how many players are playing')
+    # speak('welcome to the game of doom')
+    # speak('how many players are playing')
     users = []
     num_of_users = (int(input("How many users do you want to create? ")))
     for i in range(num_of_users):
